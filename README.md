@@ -38,4 +38,6 @@ This model was chosen mainly because of the need to present 180 degree phase off
 
 This indicates that these binocular neurons are compromised for contrast reversed stimuli. However, this model is only useful for showing the response of neurons that prefer a zero disparity stimulus. As we know, there are other neurons that do not have this same preference, so these neurons would likely display normal firing patterns for contrast reversed stimuli in each eye.
 
+![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/model_results.PNG)
+
 to see how the model was created, and to run/interact with it, go to the 'Model' section of this repository. 
