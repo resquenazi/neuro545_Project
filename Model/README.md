@@ -32,6 +32,7 @@ Now, run a test to verify that WM is working:
 #### This information is just for future runs of different models. Skip down below to view model responses.
 
 `cd wmbuild`
+
 `./bin/wm mod BDE_Gabor.moo sine_phase_disp.stm t_all.rsp tn 256 stim_nrpt 4`
 
 this will write an output file `'zz.nd'`. Then you would use the nData browser (the nd.jar)
@@ -40,11 +41,13 @@ file to view the model responses.
 ## View Model Responses
 
 You'll need to download the nD browser on the iModel.org website
+
 `wget http://www.imodel.org/nd/down/v1/nd.jar`
 
 * NOTE: if you're on a PC, you will need to download a graphical linux application. To view the model responses using a PC, find instructions here: https://seanthegeek.net/234/graphical-linux-applications-bash-ubuntu-windows/
 
 To view the responses using a Mac or Linux:
+
 `java -jar nd.jar zz.nd`
 
 Once you are viewing the responses, the model is interactive so you can play around with 
