@@ -7,3 +7,23 @@ In normally sighted individuals, visual processing, from the retina to the early
 
 
 In my research, we proposed a unique way to mimic this distortion. While we cannot recreate these distortions in the retina, it is possible to simultaneously stimulate on- and off-center populations in early visual cortex, at the level of V1 layer 4. 
+
+image: ![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/matrix.png)
+
+The image above shows an example of the filtering process. The upper two panels show an example scene (I), and the contrast-reversed version of that scene (Icr). The leftmost panels show the two radial checkerboard Fourier filters we will use: F and F′. Filters are shown in the Fourier domain, with spatial frequency increasing with distance from the center of the image and orientation changing along the polar angle dimension. Each filter is a complement of the other, so the full spatial frequency and orientation content of the scenes is divided equally across the two filters. Here, we are assuming that original and contrast-reversed images can act as a proxy for inappropriate on and off-cell population responses, because regions that would, in the original image, produce strong on-responses will produce strong off-responses in the contrast reversed image, and vice versa.
+
+The original (I) and the contrast-reversed scene (Icr= 1-I) were each converted into the Fourier domain, multiplied by one of the two Fourier filters, and then converted back to image space using the inverse Fourier transform. The middle panels show the 4 examples of possible filtering: I * F, I * F′, Icr*F, and Icr* F′ (where * denotes convolution). Note that the sum, [I * F] + [I * F′], equals the original image I. The sum, [Icr * F] + [Icr * F′], equals the original contrast reversed image Icr. In one eye, we will present the sum of two filtered images, [I * F′] + [Icr * F], such that half the spatial frequency and orientation content is based on the original image and the other half is based on the contrast reversed image. In the other eye we will present the sum of the complementary filtered images, [I * F] + [Icr * F′]. The sum of the distorted images (rightmost panels, Figure 1) in each eye results in a blank image, indicating that all the spatial frequency and orientation information of both the original and contrast reversed image is preserved, but reorganized to create visual input that is impossible in the real world
+
+## The Project
+
+## Matlab portion
+
+For this portion of the project, I decided to explore the differences between the two images using different versions of the filter. As you can see above, the radial checkerboard filter has hard cutoffs in the transition between parts of the image that are passed through, and parts of the image that are not. As we discussed a bit in class during the fourier lesson, this can have harsh effects on the resulting image when filtering. This is because just a simple edge is actually made up of several different sine waves to create that perfect line. This has consequences when filtering images using these edges because it creates ringing in the processed image. However, because of the nature of the project described above, it is imperative that the two images do not share 'on' and 'off' information. 
+
+I decided to explore what the differences in the images are between using this filter with hard edges, to the same filter with blurred edges. It turns out that the resulting images using a filter with smooth edges results in a pair of images that is much smoother. However, as is discovered in the matlab code, the resulting fourier spectrums of these images indicate that a lot of information is shared between the two eyes. 
+
+If you go to the 'Matlab Scripts' folder, you can run through the code I created in the 'Project.m' file. 
+
+## Mode portion
+
+For this portion of the project, I worked with Wyeth Bair's binocular energy model 
