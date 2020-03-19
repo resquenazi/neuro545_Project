@@ -54,9 +54,12 @@ Once you are viewing the responses, the model is interactive so you can play aro
 different parameters. The most informative result can be found by adjusting the following 
 parameters: 
 
-Set Channel 0 to 'prob'
-Set Analysis to 'Tuning_Curve'
-Set phase_disp to 'all'
+* Set Channel 0 to 'prob'
+
+* Set Analysis to 'Tuning_Curve'
+
+* Set phase_disp to 'all'
+
 
 This displays the average firing probability for neurons at phase disparieties ranging from 
 0-360. As you can see, for binocular neurons that prefer stimuli that have zero disparity, the firing rate is minimal. This indicates that these binocular neurons are compromised for contrast reversed stimuli. However, this model is only useful for showing the response of neurons that prefer a zero disparity stimulus. As we know, there are other neurons that do not have this same preference, so these neurons would likely display normal firing patterns for contrast reversed stimuli in each eye.   
