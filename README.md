@@ -30,7 +30,9 @@ If you go to the 'Matlab Scripts' folder, you can run through the code I created
 ### Model portion
 
 For this portion of the project, I worked with Wyeth Bair's binocular energy model. 
-![] (https://github.com/resquenazi/neuro545_Project/blob/master/figures/model_description.png)
+
+
+![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/model_description.png)
 
 This model was chosen mainly because of the need to present 180 degree phase offset stimuli to two eyes rather than 1 in the way that was done in the stimulus description above. When presenting two sine wave gratings that are contrast reversed in each eye, the model indicates that the firing probability for binocular neurons that prefer zero disparity is minimal. 
 
