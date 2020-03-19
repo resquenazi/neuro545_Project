@@ -1,0 +1,29 @@
+#
+#  Response file
+#
+outfile     zz     # Prefix for all output files (used w/ "*" notation)
+write_ndata *      # Write spikes to output file (* for automatic file name)
+
+save_as_unit0 s 1000.0 spikes
+save_as_prob  f 1000.0 poisson_prob
+
+save_as_fl1   f 1000.0 filter_left_1
+save_as_fl2   f 1000.0 filter_left_2
+save_as_fr1   f 1000.0 filter_right_1
+save_as_fr2   f 1000.0 filter_right_2
+
+save_as_b1p   f 1000.0 binoc_1_pos
+save_as_b1n   f 1000.0 binoc_1_neg
+save_as_b2p   f 1000.0 binoc_2_pos
+save_as_b2n   f 1000.0 binoc_2_neg
+
+save_as_b1p2  f 1000.0 binoc_1_pos_sq
+save_as_b1n2  f 1000.0 binoc_1_neg_sq
+save_as_b2p2  f 1000.0 binoc_2_pos_sq
+save_as_b2n2  f 1000.0 binoc_2_neg_sq
+
+save_as_bin1  f 1000.0 binoc_1
+save_as_bin2  f 1000.0 binoc_2
+
+save_as_bine  f 1000.0 binoc_energy
+

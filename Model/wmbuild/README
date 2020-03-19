@@ -1,0 +1,17 @@
+Compiling and Running WM
+
+You need 'cc' and 'mpicc' for compiling.
+Run the following three commands in this directory.
+Note, the 1st line may take ~30 sec to compile the libraries.
+
+Also note, the library mm_util may not compile. If this happens, 
+you will need to install it manually. 
+
+  source ./s/compile_lib
+  source ./s/compile_main
+  source ./s/compile_main_mm
+
+Now, run a test to verify that WM is working:
+
+  ./bin/wm mod ./demo/MEO_Gabor.moo ./demo/sine_dir.stm ./demo/d.rsp
+

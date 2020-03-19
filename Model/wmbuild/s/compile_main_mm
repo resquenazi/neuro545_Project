@@ -1,0 +1,18 @@
+#
+#  Compile 'mm', the MPI version of the main program.
+#
+cd src
+
+mpicc -O2 -o ../bin/mm mm.c -L../lib -I../libc \
+ -lwm_util -lmod_pop_util -lmod_dog_util -lmod_wav_util -lmod_vhf_util \
+ -lmod_dcn_util -lmod_mesh_util -lmod_me_util -lifc_util -lpop_util \
+ -lmod_conn_util -lmod_lin_util -lmod_test_util \
+ -lmod_x_util -lmod_srf_util -lpop_cell_util -lmm_util \
+ -lmod_util -lpop_low_util -lstim_util -lstm_util -lretina_util \
+ -lmctrl_util -lkernel_util -lnoise_util -lsig_util -lfft_util \
+ -lparamfile_util -lndata_util -lspike_util \
+ -lmin_util -ldata_util -lmyrand_util -lfunc_util \
+ -lplot_util -lfarray_util -liarray_util -lcarray_util -lmisc_util \
+ -lnr_util -lmy_util -lm
+
+cd ..

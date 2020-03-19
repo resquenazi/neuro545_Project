@@ -1,0 +1,8 @@
+#
+#  demo1.rsp - This is a wm response parameter file
+#
+outfile     zz     # Prefix for all output files (used w/ "*" notation)
+write_ndata *      # Write spikes to output file (* for automatic file name)
+
+save_as_unit0 s 1000.0 spikes
+save_as_meopp f 1000.0 me_opp

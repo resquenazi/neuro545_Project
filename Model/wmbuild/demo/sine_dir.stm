@@ -1,0 +1,29 @@
+#------------------------------------------------------------------------------
+#
+#  sine_dir.stm - direction tuning w/ drifting sinewaves
+#
+#     1  gray
+#    16  directions in 22/23 degree increments
+#
+#------------------------------------------------------------------------------
+
+stim_type  sine      # Stimulus type
+stim_samp 1000.0     # Stimulus sampling rate
+
+st0          0.050   # start time (s)
+stn        100.000   # duration (s)
+cx           0       # center (deg)
+cy           0       # center (deg)
+direction    0       # Direction of drift
+sf         1.2       # Spatial period (cyc/deg)
+phase        0       # Degrees
+tf         8.0       # Temporal frequency (Hz)
+size       2.0       # Degrees of visual angle
+aptype       1       # Aperture type (0-none, 1-circ)
+bgval      0.5       # background value [0..1]
+contrast   1.0       # Contrast
+maxlum     1.0       # Maximum luminance
+stim_nrpt   10       # Number of repeats
+
+VARLINK_direction 0 0 22 45 67 90 112 135 157 180 202 225 247 270 292 315 337
+VARLINK_contrast  0 1  1  1  1  1   1   1   1   1   1   1   1   1   1   1   1

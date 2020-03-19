@@ -1,0 +1,54 @@
+#------------------------------------------------------------------------------
+#
+#  sine_phase_disp.stm - phase disparity
+#
+#------------------------------------------------------------------------------
+
+stim_type  sine      # Stimulus type
+stim_samp 1000.0     # Stimulus sampling rate
+stim_form 3d_b       # Binocular stimulus
+
+st0          0.000   # start time (s)
+stn        100.000   # duration (s)
+
+#
+# Set exactly 2 of these:  cx_disp = cx_R - cx_L
+# Set exactly 2 of these:  cy_disp = cy_R - cy_L
+#
+cx_L         0       # center (deg) Left eye stimulus
+cy_L         0       # center (deg)
+
+cx_R         0       # center (deg) Right eye stimulus
+cy_R         0       # center (deg)
+
+#
+# Set exactly 2 of these:  phase_disp = phase_R - phase_L
+#
+phase_L      0       # Initial phase (deg)
+phase_disp   0       # Phase disparity (deg)
+
+direction    0       # Direction of drift
+sf         1.0       # Spatial period (cyc/deg)
+tf         8.0       # Temporal frequency (Hz)
+size       2.0       # Degrees of visual angle
+aptype       1       # Aperture type (0-none, 1-circ)
+bgval      0.5       # background value [0..1]
+contrast   1.0       # Contrast
+maxlum     1.0       # Maximum luminance
+stim_nrpt    1       # Number of repeats
+
+# -180 -157 -135 -112 -90 -67 -45 -22 0 22 45 67 90 112 135 157 180
+VAR_phase_disp 0 22 45 67 90 112 135 157 180 202 225 247 270 292 315 337 
+#VARSINGLE_contrast 0.0
+
+
+#
+#  These parameters are used only when dumping the stimulus for viewing
+#  as a 3D data file.
+#
+stim_frame_xn           32      # x size (pixels)
+stim_frame_yn           32      # y size (pixels)
+stim_frame_tn           64      # t size (image frames)
+stim_frame_sscale        0.1    # spatial scale (deg/pix)
+stim_frame_tscale        0.002  # temporal scale (s/frame)
+stim_frame_binoc_dxn    16      # width of gray space between frames (pix)

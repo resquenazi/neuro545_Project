@@ -1,0 +1,35 @@
+Below are two steps:
+  (1) compile the source code, and
+  (2) time the execution of several simulations.
+
+(1) Compiling - you need 'cc' and 'mpicc' for compiling.
+    Run the following three commands in this directory.
+    Note, the 1st line may take ~30 sec to compile the libraries.
+
+source ./s/compile_lib
+source ./s/compile_main
+source ./s/compile_main_mm
+
+
+(2) Now, run two timed test simulations.  
+    First, a single process run.
+    This could take 30-40 sec to finish.
+
+  time ./bin/wm mod ./demo/MEO_Gabor.moo ./demo/sine_dir.stm ./demo/d.rsp
+
+  [Please let me know what 'time' reports when this finishes.]
+
+
+    Second, a multi-process run where the '-n 16' should be
+    set to the number of cores on the machine being tested,
+    or half the number of cores for comparison.
+    This could take about 2 minutes with 16 cores.
+
+  mpiexec -n 16 ./bin/mm modq ./demo/MEO_Gabor.moo ./demo/sine_dir_fine.stm ./demo/d.rsp
+
+When the above command finishes, the 4th line from the bottom should
+report "Total time = ..."  Please let me know what this time is.
+
+
+__________________________________________
+ For help, contact:  wyeth.bair@gmail.com
