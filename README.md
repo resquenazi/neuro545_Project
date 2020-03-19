@@ -29,4 +29,11 @@ If you go to the 'Matlab Scripts' folder, you can run through the code I created
 
 ### Model portion
 
-For this portion of the project, I worked with Wyeth Bair's binocular energy model 
+For this portion of the project, I worked with Wyeth Bair's binocular energy model. 
+![] (https://github.com/resquenazi/neuro545_Project/blob/master/figures/model_description.png)
+
+This model was chosen mainly because of the need to present 180 degree phase offset stimuli to two eyes rather than 1 in the way that was done in the stimulus description above. When presenting two sine wave gratings that are contrast reversed in each eye, the model indicates that the firing probability for binocular neurons that prefer zero disparity is minimal. 
+
+This indicates that these binocular neurons are compromised for contrast reversed stimuli. However, this model is only useful for showing the response of neurons that prefer a zero disparity stimulus. As we know, there are other neurons that do not have this same preference, so these neurons would likely display normal firing patterns for contrast reversed stimuli in each eye.
+
+to see how the model was created, and to run/interact with it, go to the 'Model' section of this repository. 
