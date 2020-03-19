@@ -9,7 +9,7 @@ In normally sighted individuals, visual processing, from the retina to the early
 In my research, we proposed a unique way to mimic this distortion. While we cannot recreate these distortions in the retina, it is possible to simultaneously stimulate on- and off-center populations in early visual cortex, at the level of V1 layer 4. 
 
 
-image: ![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/matrix.png)
+![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/matrix.png)
 
 
 
