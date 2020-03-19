@@ -19,7 +19,7 @@ The original (I) and the contrast-reversed scene (Icr= 1-I) were each converted 
 
 ## The Project
 
-## Matlab portion
+### Matlab portion
 
 For this portion of the project, I decided to explore the differences between the two images using different versions of the filter. As you can see above, the radial checkerboard filter has hard cutoffs in the transition between parts of the image that are passed through, and parts of the image that are not. As we discussed a bit in class during the fourier lesson, this can have harsh effects on the resulting image when filtering. This is because just a simple edge is actually made up of several different sine waves to create that perfect line. This has consequences when filtering images using these edges because it creates ringing in the processed image. However, because of the nature of the project described above, it is imperative that the two images do not share 'on' and 'off' information. 
 
@@ -27,6 +27,6 @@ I decided to explore what the differences in the images are between using this f
 
 If you go to the 'Matlab Scripts' folder, you can run through the code I created in the 'Project.m' file. 
 
-## Model portion
+### Model portion
 
 For this portion of the project, I worked with Wyeth Bair's binocular energy model 
