@@ -8,7 +8,10 @@ In normally sighted individuals, visual processing, from the retina to the early
 
 In my research, we proposed a unique way to mimic this distortion. While we cannot recreate these distortions in the retina, it is possible to simultaneously stimulate on- and off-center populations in early visual cortex, at the level of V1 layer 4. 
 
+
 image: ![](https://github.com/resquenazi/neuro545_Project/blob/master/figures/matrix.png)
+
+
 
 The image above shows an example of the filtering process. The upper two panels show an example scene (I), and the contrast-reversed version of that scene (Icr). The leftmost panels show the two radial checkerboard Fourier filters we will use: F and F′. Filters are shown in the Fourier domain, with spatial frequency increasing with distance from the center of the image and orientation changing along the polar angle dimension. Each filter is a complement of the other, so the full spatial frequency and orientation content of the scenes is divided equally across the two filters. Here, we are assuming that original and contrast-reversed images can act as a proxy for inappropriate on and off-cell population responses, because regions that would, in the original image, produce strong on-responses will produce strong off-responses in the contrast reversed image, and vice versa.
 
@@ -24,6 +27,6 @@ I decided to explore what the differences in the images are between using this f
 
 If you go to the 'Matlab Scripts' folder, you can run through the code I created in the 'Project.m' file. 
 
-## Mode portion
+## Model portion
 
 For this portion of the project, I worked with Wyeth Bair's binocular energy model 
