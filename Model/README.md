@@ -42,10 +42,8 @@ file to view the model responses.
 You'll need to download the nD browser on the iModel.org website
 `wget http://www.imodel.org/nd/down/v1/nd.jar`
 
-NOTE: if you're on a PC, you will need to download a graphical linux application
-to view the model responses. 
-
-find instructions here: https://seanthegeek.net/234/graphical-linux-applications-bash-ubuntu-windows/
+*NOTE: if you're on a PC, you will need to download a graphical linux application
+to view the model responses. Find instructions here: https://seanthegeek.net/234/graphical-linux-applications-bash-ubuntu-windows/
 
 to view the responses:
 `java -jar nd.jar zz.nd`
